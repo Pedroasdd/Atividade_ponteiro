@@ -1,0 +1,26 @@
+#include<stdio.h>
+
+int main(){
+
+  int a, b;
+  int *ptrA, *ptrB;
+
+  printf("Digite o primeiro numero:\n");
+  scanf("%d", &a);
+  printf("Digite o segundo numero:\n");
+  scanf("%d", &b);
+
+  ptrA = &a;
+  ptrB = &b;
+
+  if (ptrA > ptrB){
+
+    printf("O endereço maior e %d\n", *ptrA);
+  }
+  else{
+
+    printf("O endereço maior e %d\n", *ptrB);
+  }
+
+  return 0;
+}
