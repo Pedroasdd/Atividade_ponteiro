@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+void calcula(float raio, float *area, float *volume){
+
+    *area = 4 * 3.14 * raio * raio;
+
+    *volume =  4.0 / 3.0 * 3.14 * raio * raio * raio;
+}
+
+int main(){
+    float raio, area, volume;
+
+    printf("Digite o tamanho do raio da esfera: \n");
+    scanf("%f", &raio);
+
+    calcula(raio, &area, &volume);
+
+    printf("Area: %.2f\n", area);
+    printf("Volume: %.2f\n", volume);
+
+    return 0;
+
+}
